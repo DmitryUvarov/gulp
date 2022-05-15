@@ -151,5 +151,6 @@ const clean = () => del(path.clean);
 const build = gulp.series(clean, css, js, html, images, sprite, otf2ttf, fonts);
 const start = gulp.series(server);
 
+exports.build = build;
 exports.default = build;
 exports.start = start;
