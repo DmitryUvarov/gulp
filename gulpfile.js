@@ -11,7 +11,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const groupMedia = require('gulp-group-css-media-queries');
 const webp = require('gulp-webp');
 const webphtml = require('gulp-webp-html');
-const webpcss = require('gulp-webpcss');
 const imagemin = require('gulp-imagemin');
 const svgstore = require('gulp-svgstore');
 const ttf2woff = require('gulp-ttf2woff');
@@ -64,7 +63,7 @@ function css() {
             cascade: true
         }))
         .pipe(groupMedia())
-        .pipe(webpcss())
+        //.pipe(webpcss())
         .pipe(gulp.dest(path.build.css))
         .pipe(cleanCss())
         .pipe(rename("style.min.css"))
