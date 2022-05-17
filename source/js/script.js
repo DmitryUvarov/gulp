@@ -1,5 +1,4 @@
 //@@include('sliders.js');
-//@@include('app/popup.js');
 
 
 
