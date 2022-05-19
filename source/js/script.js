@@ -1,5 +1,5 @@
 //@@include('sliders.js');
-
+//@@include('sliders.js');
 
 
 const body = document.body;
